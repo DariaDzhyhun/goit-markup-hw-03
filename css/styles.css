@@ -15,7 +15,14 @@ body{
     letter-spacing: 0.03em;
 }
 .head{
-    background-color: var(--white-color)
+    background-color: var(--white-color);
+    font-weight: 500;
+}
+.container{
+    width: 1200px;
+    padding: 15px;
+    /* display: flex; */
+    border: solid 3px tomato;
 }
 .link-header{
     text-decoration: none;
@@ -47,13 +54,20 @@ body{
     color: var(--black-color);
 }
 .nav{
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
 }
+.navigation{
+    display: flex;
 
+}
+.nav-list{
+
+}
 .logo{
     color: var(--accent-color);
 }
