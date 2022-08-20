@@ -180,10 +180,6 @@ margin-left: 30px;
     padding-bottom: 94px;
     column-gap: var(--column-gap);
 }
-.team{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 .third-section{
 background-color: var(--second-body-color);    
 }
@@ -285,7 +281,6 @@ background-color: var(--second-body-color);
 
     display: flex;
     padding-left: 0px;
-    padding-top: 94px;
     justify-content: center;
     margin-bottom: var(--margin-none);
     margin-top: var(--margin-none);
