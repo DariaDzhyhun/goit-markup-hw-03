@@ -9,6 +9,7 @@
     --black-color: #000000;
     --column-gap: 30px;
     --margin-none: 0px;
+   
 }
 body{
     font-family: 'Roboto', sans-serif;
@@ -19,13 +20,14 @@ body{
 p{
     margin: var(--margin-none);
 }
-.head{
+.header{
     background-color: var(--white-color);
     font-weight: 500;
     border-bottom: solid 1px #ECECEC;
 
-    display: flex;
 }
+.head{
+    display: flex;}
 .container{
     width: 1200px;
     padding-left: 15px;
@@ -38,6 +40,9 @@ p{
     display: block;
     max-width: 100%;
     height: auto;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: var(--margin-none);
 }
 .section{
     padding-top: 94px;
@@ -52,7 +57,7 @@ p{
     font-weight: 500;
 
 }
-.header{
+.header-contacts{
     display: flex;
     padding: 0px;
     margin: var(--margin-none);
@@ -71,8 +76,8 @@ p{
 .link{
     text-decoration: none;
     color:inherit;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 .link:hover{
     color: var(--accent-color);
@@ -114,9 +119,10 @@ p{
 }
 .hero{
     background-color: var(--second-background-color);
-    display: flex;
     flex-direction: column;
     text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
     
     
 }
@@ -128,7 +134,7 @@ p{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     
-    margin-top: 200px;
+    
     margin-left: auto;
     margin-right: auto;
     width: 696px;
@@ -146,7 +152,7 @@ p{
     border: 0;
     border-radius: 4px;
     padding: 10px 32px;
-    margin-bottom: 200px;
+    
 }
 .button:hover, .button:focus{
     background-color:#188CE8;
@@ -163,13 +169,19 @@ p{
     clip-path: inset(50%);
     margin: -1px;}
 .text{
+    
     font-size: 14px;
     line-height: 1.17;
     margin: var(--margin-none);
 }
-.benefits+ .benefits{
-margin-left: 30px;
+.benefits{
+    width: calc((100%-90px)/4);
+    margin-right: 30px;
 }
+.benefits :nth-last-child(4n){
+    margin-right: 0px;
+}
+
 .first-section{
     display: flex;
     margin: var(--margin-none);
@@ -177,11 +189,9 @@ margin-left: 30px;
 .photo-cards{
     display: flex;
     margin:var(--margin-none);
-    margin-top: 50px;
-    padding-bottom: 94px;
     column-gap: var(--column-gap);
 }
-.third-section{
+.backgrond{
 background-color: var(--second-body-color);    
 }
 .titles-team{
@@ -198,12 +208,13 @@ background-color: var(--second-body-color);
    
     display: flex;
     margin: var(--margin-none);
-    margin-top: 50px;
+   
     column-gap: var(--column-gap);
 
     
 }
 .team-elements{
+    
     background-color: var(--white-color);
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -226,6 +237,7 @@ background-color: var(--second-body-color);
     font-size: 36px;
     line-height: 1.16;
     margin: var(--margin-none);
+    margin-bottom: 50px;
 
     text-align: center;
 }
@@ -299,16 +311,24 @@ background-color: var(--second-body-color);
     margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
-    column-gap: var(--column-gap);
     row-gap: var(--column-gap);
 }
+.net{
+    width: calc((100% - 60px)/ 3);
+    margin-right: var(--column-gap);
+}
+.net:nth-child(3n){
+    margin-right: var(--margin-none);
+}
+
 
 .footer{
     background-color: var(--second-background-color);
     color: var(--white-color);
     font-size: 14px;
     line-height: 1.17;
-    
+    padding-top: 60px;
+    padding-bottom: 60px;
 
 }
 .mailto-link,
@@ -327,18 +347,7 @@ background-color: var(--second-body-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    padding-bottom: 0px;
     
-}
-.footer-container{
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 .footer-styles{
     list-style: none;
@@ -346,8 +355,8 @@ background-color: var(--second-body-color);
     margin: 0px;
 }
 
-.footer-links +.footer-links{
-    margin-top: 9px;
-    
-    
+.footer-links:not(:last-child){ 
+margin-bottom: 9px;
 }
+   
+    
